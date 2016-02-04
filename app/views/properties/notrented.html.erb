@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<h1>These are the Properties that are not occupied by any renter at this moment!</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Property name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Type of property</th>
+      <th>Sqft</th>
+      <th>No of rooms</th>
+      <th>No of bathrooms</th>
+      <th>Occupied by renter</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @property.where(:occupied_by_renter => false).each do |property| %>
+      <tr>
+        <td><%= property.user.name %></td>
+        <td><%= property.property_name %></td>
+        <td><%= property.address %></td>
+        <td><%= property.city %></td>
+        <td><%= property.state %></td>
+        <td><%= property.zip %></td>
+        <td><%= property.type_of_property %></td>
+        <td><%= property.sqft %></td>
+        <td><%= property.no_of_rooms %></td>
+        <td><%= property.no_of_bathrooms %></td>
+        <td><%= property.occupied_by_renter %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

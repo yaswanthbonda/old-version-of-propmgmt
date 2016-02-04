@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Property:</strong>
+  <%= @rent.property %>
+</p>
+
+<p>
+  <strong>Renter name:</strong>
+  <%= @rent.renter_name %>
+</p>
+
+<p>
+  <strong>Rent time period in months:</strong>
+  <%= @rent.rent_time_period_in_months %>
+</p>
+
+<p>
+  <strong>Rent cost in dollars:</strong>
+  <%= @rent.rent_cost_in_dollars %>
+</p>
+
+<p>
+  <strong>Deposit amount:</strong>
+  <%= @rent.deposit_amount %>
+</p>
+
+<%= link_to 'Edit', edit_rent_path(@rent) %> |
+<%= link_to 'Back', rents_path %>

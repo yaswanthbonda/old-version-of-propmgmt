@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Renter name</th>
+      <th>Rent time period in months</th>
+      <th>Rent cost in dollars</th>
+      <th>Deposit amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rents.each do |rent| %>
+      <tr>
+        <td><%= rent.property.property_name %></td>
+        <td><%= rent.renter_name %></td>
+        <td><%= rent.rent_time_period_in_months %></td>
+        <td><%= rent.rent_cost_in_dollars %></td>
+        <td><%= rent.deposit_amount %></td>
+        <td><%= link_to 'Show', rent %></td>
+        <td><%= link_to 'Edit', edit_rent_path(rent) %></td>
+        <td><%= link_to 'Destroy', rent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+If you want to rent a property, first please view the properties page and know the id of the property you want to rent, so that you can enter its value in the first entry of the new rent link below this.
+<%= link_to 'New Rent', new_rent_path %>
