@@ -2,6 +2,10 @@
 
 <h1>Listing Users</h1>
 
+
+If you want to view the properties of a user please click the "Show my properties list" button side of that user
+<br>
+<br>
 <table>
   <thead>
     <tr>
@@ -18,9 +22,9 @@
         <td><%= user.name %></td>
         <td><%= user.notes %></td>
         <td><%= user.no_of_properties %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show my properties list', user %></td>
+        <td><%= link_to 'Edit my properties list', edit_user_path(user) %></td>
+        <td><%link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
