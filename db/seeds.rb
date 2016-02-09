@@ -15,13 +15,13 @@ User.create(name: 'pratyusha', notes: 'i have few properties', no_of_properties:
 User.create(name: 'sailaja', notes: 'i have 3 properties', no_of_properties: 3)
 User.create(name: 'krishna', notes: 'properties list', no_of_properties: 5)
 
-Rent.create(property: 'homeforrent1', renter_name: 'jack', rent_time_period_in_months: 15, rent_cost_in_dollars: 50000, deposit_amount: 5000)
-Rent.create(property: 'homeforrent3', renter_name: 'paul', rent_time_period_in_months: 24, rent_cost_in_dollars: 140000, deposit_amount: 14000)
-Rent.create(property: 'mansion3', renter_name: 'sita', rent_time_period_in_months: 12, rent_cost_in_dollars: 54000, deposit_amount: 9000)
-Rent.create(property: 'homeforrent6', renter_name: 'pavan', rent_time_period_in_months: 36, rent_cost_in_dollars: 990000, deposit_amount: 90000)
-Rent.create(property: 'officespace1', renter_name: 'pavan', rent_time_period_in_months: 36, rent_cost_in_dollars: 1500000, deposit_amount: 15000)
-Rent.create(property: 'officespace6', renter_name: 'karthik', rent_time_period_in_months: 12, rent_cost_in_dollars: 70000, deposit_amount: 7000)
-Rent.create(property: 'officespace7', renter_name: 'ravi', rent_time_period_in_months: 18, rent_cost_in_dollars: 750000, deposit_amount: 7000)
+Rent.create(property: 4, renter_name: 'jack', rent_time_period_in_months: 15, rent_cost_in_dollars: 50000, deposit_amount: 5000)
+Rent.create(property: 6, renter_name: 'paul', rent_time_period_in_months: 24, rent_cost_in_dollars: 140000, deposit_amount: 14000)
+Rent.create(property: 9, renter_name: 'sita', rent_time_period_in_months: 12, rent_cost_in_dollars: 54000, deposit_amount: 9000)
+Rent.create(property: 12, renter_name: 'pavan', rent_time_period_in_months: 36, rent_cost_in_dollars: 990000, deposit_amount: 90000)
+Rent.create(property: 13, renter_name: 'pavan', rent_time_period_in_months: 36, rent_cost_in_dollars: 1500000, deposit_amount: 15000)
+Rent.create(property: 16, renter_name: 'karthik', rent_time_period_in_months: 12, rent_cost_in_dollars: 70000, deposit_amount: 7000)
+Rent.create(property: 17, renter_name: 'ravi', rent_time_period_in_months: 18, rent_cost_in_dollars: 750000, deposit_amount: 7000)
 
 
 
